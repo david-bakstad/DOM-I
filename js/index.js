@@ -56,6 +56,26 @@ const domButton = document.querySelector("button");
 domButton.textContent = siteContent["cta"]["button"]
 
 const headerButton = document.querySelector("#cta-img");
-console.log(headerButton)
 headerButton.setAttribute("src", siteContent["cta"]["img-src"])
 
+// const featuresFour = document.querySelector(".top-content h4")
+// featuresFour.textContent = siteContent["main-content"]["features-h4"];
+
+const featFourP = document.querySelector(".top-content p")
+featFourP.textContent = siteContent["main-content"]["features-content"];
+
+const aboutFour = document.querySelectorAll(".text-content h4:nth-of-type(1)")
+console.log(aboutFour)
+// for(let i = 0; i < aboutFour.length; i++) {
+//   aboutFour[i].textContent = siteContent["main-content"]["h4"]
+// }
+aboutFour.textContent = siteContent["main-content"]["features-h4"]
+
+const lowerImage = document.querySelector("#middle-img")
+lowerImage.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+const contactFour = document.querySelector(".contact h4");
+contactFour.textContent = siteContent["contact"]["contact-h4"]
+
+const copyright = document.querySelector("footer p");
+copyright.textContent = siteContent["footer"]["copyright"]
