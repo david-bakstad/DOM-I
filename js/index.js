@@ -58,18 +58,21 @@ domButton.textContent = siteContent["cta"]["button"]
 const headerButton = document.querySelector("#cta-img");
 headerButton.setAttribute("src", siteContent["cta"]["img-src"])
 
-// const featuresFour = document.querySelector(".top-content h4")
-// featuresFour.textContent = siteContent["main-content"]["features-h4"];
+const featFourP = document.querySelectorAll(".top-content p")
+featFourP[0].textContent = siteContent["main-content"]["features-content"];
+featFourP[1].textContent = siteContent["main-content"]["about-content"];
 
-const featFourP = document.querySelector(".top-content p")
-featFourP.textContent = siteContent["main-content"]["features-content"];
+const bottomP = document.querySelectorAll(".bottom-content p")
+bottomP[0].textContent = siteContent["main-content"]["services-content"];
+bottomP[1].textContent = siteContent["main-content"]["product-content"];
+bottomP[2].textContent = siteContent["main-content"]["vision-content"];
 
-const aboutFour = document.querySelectorAll(".text-content h4:nth-of-type(1)")
-console.log(aboutFour)
-// for(let i = 0; i < aboutFour.length; i++) {
-//   aboutFour[i].textContent = siteContent["main-content"]["h4"]
-// }
-aboutFour.textContent = siteContent["main-content"]["features-h4"]
+const h4 = document.querySelectorAll("h4")
+h4[0].textContent = siteContent["main-content"]["features-h4"]
+h4[1].textContent = siteContent["main-content"]["about-h4"]
+h4[2].textContent = siteContent["main-content"]["services-h4"]
+h4[3].textContent = siteContent["main-content"]["product-h4"]
+h4[4].textContent = siteContent["main-content"]["vision-h4"]
 
 const lowerImage = document.querySelector("#middle-img")
 lowerImage.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
